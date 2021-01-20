@@ -1,0 +1,19 @@
+{
+  "name": "fideljustine_3_20012021",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts":{ 
+    "sass": "sass --watch ./sass/acceuil.sass:./css/acceuil.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justine1410/FidelJustine_3_20012021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/justine1410/FidelJustine_3_20012021/issues"
+  },
+  "homepage": "https://github.com/justine1410/FidelJustine_3_20012021#readme"
+}
