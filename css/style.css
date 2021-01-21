@@ -1,0 +1,225 @@
+#bloc_page {
+  max-width: 750px;
+  font-family: "Roboto", arial;
+}
+
+.header_logo {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 32px;
+  background-color: #f6f6f6;
+  padding-top: 10px;
+}
+.header_logo .header_logo img {
+  width: 100%;
+  height: 32px;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 285px;
+  background-color: #f6f6f6;
+}
+article .article_map {
+  margin-top: 10px;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eaeaea;
+  box-shadow: inset 0 3px 3px #cfcfcf;
+}
+article .fa-map-marker-alt {
+  margin-right: 15px;
+}
+article input {
+  border: none;
+  background-color: #eaeaea;
+  font-weight: bold;
+}
+article .presentation {
+  display: flex;
+  flex-direction: column;
+}
+article .presentation p {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 0;
+}
+article .presentation h1 {
+  text-align: center;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: normal;
+}
+article .presentation input {
+  width: 60%;
+  height: 48px;
+  margin-left: 60px;
+  border-radius: 20px;
+  background: linear-gradient(to top left, #9356dc, #ff79da);
+  color: white;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+nav .nav_choix {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+nav a {
+  display: flex;
+  flex-direction: row;
+  width: 95%;
+  border: solid #eaeaea;
+  border-radius: 20px;
+  align-items: baseline;
+  background-color: #eaeaea;
+  text-decoration: none;
+  box-shadow: -1px 4px 6px #d1d1d1;
+}
+nav a p {
+  z-index: 1;
+  position: relative;
+  right: 10px;
+  background-color: #9356dc;
+  color: white;
+  width: 5%;
+  padding: 5px;
+  text-align: center;
+  border-radius: 100%;
+}
+nav a .nav_icone {
+  z-index: 1;
+  position: relative;
+  left: 5px;
+  color: #7e7e7e;
+}
+nav a h3 {
+  z-index: 1;
+  position: relative;
+  left: 15px;
+  color: black;
+}
+nav a:hover {
+  background-color: #f2eafb;
+  border: none;
+}
+nav a:hover .nav_icone {
+  color: #9356dc;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #f6f6f6;
+  padding-bottom: 30px;
+}
+section h2 {
+  margin-left: 10px;
+}
+section .restaurant {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 250px;
+  background-color: white;
+  margin: 10px;
+  border-radius: 20px;
+}
+section .restaurant a {
+  text-decoration: none;
+  color: black;
+  width: 100%;
+  height: 250px;
+}
+section .restaurant figure {
+  margin: 0;
+  display: inline-block;
+  position: relative;
+}
+section .restaurant figure .txt {
+  z-index: 1;
+  position: absolute;
+  top: 5%;
+  left: 65%;
+  width: 30%;
+}
+section .restaurant figure h4 {
+  margin: 0;
+  color: #38c4a1;
+  background-color: #99e2d0;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section .restaurant figure img {
+  width: 100%;
+  height: 172px;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+section .restaurant figcaption {
+  display: flex;
+  flex-direction: row;
+  height: 76px;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 10px;
+}
+
+figcaption .restaurant_title {
+  display: flex;
+  flex-direction: column;
+}
+figcaption .restaurant_title h4 {
+  margin: 0;
+}
+figcaption .restaurant_title p {
+  margin: 0;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  height: 180px;
+  justify-content: space-around;
+  background-color: #353535;
+  color: white;
+  padding: 15px;
+}
+footer h5 {
+  margin-bottom: 10px;
+  font-family: "Shrikhand", arial;
+  font-size: 14px;
+}
+footer p {
+  margin: 0;
+  text-decoration: none;
+  color: white;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+footer .fa-utensils {
+  margin: 4px;
+}
+
+/*# sourceMappingURL=style.css.map */
