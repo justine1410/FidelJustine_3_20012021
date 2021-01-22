@@ -202,6 +202,23 @@ figcaption .restaurant_title p {
   margin: 0;
 }
 
+.fa-heart {
+  font-weight: 400;
+}
+.fa-heart:hover {
+  font-weight: 900;
+  color: #9356dc;
+  animation: taille 2s;
+}
+
+@keyframes taille {
+  from {
+    font-size: 0px;
+  }
+  to {
+    font-size: 100%;
+  }
+}
 footer {
   display: flex;
   flex-direction: column;

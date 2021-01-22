@@ -73,3 +73,23 @@ figcaption{
        }
     }
 }
+
+.fa-heart{
+    font-weight: 400;
+
+    &:hover{
+        font-weight: 900;
+        color:$color-primary;
+        animation:taille 2s;
+    }
+}
+    
+
+@keyframes taille{
+    from{
+        font-size: 0px;
+    }
+    to{
+        font-size:100%;
+    }
+}
