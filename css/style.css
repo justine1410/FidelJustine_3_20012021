@@ -455,23 +455,23 @@ button:hover > i::after {
 }
 
 /***Animation glissade carte***/
-.choice_food1:hover .icone, .choice_food2:hover .icone, .choice_food3:hover .icone, .choice_food4 .icone {
+.choice_food1:hover .icone, .choice_food2:hover .icone, .choice_food3:hover .icone, .choice_food4:hover .icone {
   background-color: #99e2d0;
   transform: scale(1);
   transform-origin: 100%;
   transition: 2000ms;
   width: 100%;
 }
-.choice_food1:hover .fa-check-circle, .choice_food2:hover .fa-check-circle, .choice_food3:hover .fa-check-circle, .choice_food4 .fa-check-circle {
+.choice_food1:hover .fa-check-circle, .choice_food2:hover .fa-check-circle, .choice_food3:hover .fa-check-circle, .choice_food4:hover .fa-check-circle {
   transform: rotate(3turn);
   transition: 600ms;
 }
-.choice_food1:hover p, .choice_food2:hover p, .choice_food3:hover p, .choice_food4 p {
+.choice_food1:hover p, .choice_food2:hover p, .choice_food3:hover p, .choice_food4:hover p {
   width: 60%;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.choice_food1:hover h4, .choice_food2:hover h4, .choice_food3:hover h4, .choice_food4 h4 {
+.choice_food1:hover h4, .choice_food2:hover h4, .choice_food3:hover h4, .choice_food4:hover h4 {
   width: 60%;
   text-overflow: ellipsis;
   white-space: nowrap;

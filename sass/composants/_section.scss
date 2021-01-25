@@ -201,7 +201,7 @@ button:hover> i::after{
 
  /***Animation glissade carte***/
 
-.choice_food1:hover,.choice_food2:hover,.choice_food3:hover,.choice_food4{
+.choice_food1:hover,.choice_food2:hover,.choice_food3:hover,.choice_food4:hover{
     .icone{
         background-color: $color-tertiary;
         transform:scale(1);
