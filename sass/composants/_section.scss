@@ -181,10 +181,8 @@ button{
     padding:0;
 }
                             /***Coeur qui se remplit***/
-.restaurant_heart .fa-heart{
-    
-}
-.restaurant_heart .fa-heart:hover{
+
+ .restaurant_heart .i:hover{
     font-weight: 900;
     color:$color_primary;
     animation:heart 5s;

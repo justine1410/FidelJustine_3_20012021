@@ -19,6 +19,93 @@ body {
   width: 50%;
 }
 
+/***animation page***/
+#bloc_page .acceuil {
+  animation: fixe 8s;
+}
+
+@keyframes fixe {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/***animation loading***/
+.loading {
+  position: absolute;
+  height: 200px;
+  left: 25%;
+  top: 50%;
+  opacity: 0;
+  animation: loading 4s;
+}
+
+.loading img {
+  width: 80%;
+  position: relative;
+  right: 10%;
+}
+
+@keyframes loading {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/***animation couvert loading***/
+.loading .I1 {
+  font-size: 2em;
+  margin: 0;
+  color: #9356dc;
+  position: absolute;
+  left: 25%;
+  top: 40%;
+  animation: rotation 2s infinite;
+}
+
+.loading .I2 {
+  font-size: 2em;
+  margin: 0;
+  color: #9356dc;
+  position: absolute;
+  left: 85%;
+  bottom: 80%;
+  animation: rotation 2s infinite;
+}
+
+.loading .I3 {
+  font-size: 2em;
+  margin: 0;
+  color: #9356dc;
+  position: absolute;
+  right: 120%;
+  bottom: 80%;
+  animation: rotation 2s infinite;
+}
+
+.loading .I4 {
+  font-size: 2em;
+  margin: 0;
+  color: #9356dc;
+  position: absolute;
+  bottom: 120%;
+  left: 25%;
+  animation: rotation 2s infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(3turn);
+  }
+}
+/***animation coeur***/
 .header_carte {
   display: flex;
   flex-direction: column;
@@ -345,7 +432,7 @@ button {
 }
 
 /***Coeur qui se remplit***/
-.restaurant_heart .fa-heart:hover {
+.restaurant_heart .i:hover {
   font-weight: 900;
   color: #9356dc;
   animation: heart 5s;
