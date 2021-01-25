@@ -1,3 +1,6 @@
+
+
+/***Page principale***/
 section{
     display: flex;
     flex-direction: column;
@@ -6,16 +9,6 @@ section{
     padding-bottom:30px;
     h3{
         margin-left:15px;
-    }
-    h2{
-        font-family:'Shrikhand', arial;
-        margin-top:-40px;
-        padding:10px;
-        border-radius: 20px;
-        background-color: $color_fond_page;
-        display: flex;
-        align-items: baseline;
-        justify-content: space-between;
     }
 }
 section .restaurant{
@@ -40,7 +33,7 @@ section .restaurant{
         display: inline-block;
         position:relative;
     }
-    figure .txt{
+    figure .news{
         z-index:1;
         position:absolute;
         top:5%;
@@ -83,11 +76,20 @@ section .restaurant{
          }
     }
 }
-
+/****page carte***/
+.resto h2{
+        font-family:'Shrikhand', arial;
+        margin-top:-40px;
+        padding:10px;
+        border-radius: 20px;
+        background-color: $color_fond_page;
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+}
 .choice{
-    height: 300px;
     width: 90%;
-    padding-left: 10px;
+    padding-left: 5px;
     margin-bottom:30px;
     display:flex;
     flex-direction:column;
@@ -97,7 +99,6 @@ section .restaurant{
         font-size: 16px;
         padding-bottom:8px;
         width: 20%;
-        margin:0;
         border-bottom: solid $color-tertiary;
     }
     h4{
@@ -114,10 +115,11 @@ section .restaurant{
         overflow:hidden;
         text-overflow:ellipsis;
     }
-    .choice_food1,.choice_food2,.choice_food3{
+    .choice_food1,.choice_food2,.choice_food3,.choice_food4{
         display:flex;
         width: 100%;
         height: 60px;
+        margin:5px;
         background-color: white;
         border-radius:20px;
         padding:0;
@@ -171,35 +173,35 @@ section .btn_commande{
             border:none;
         }
 }
-
+/***Animation coeur qui se remplit acceuil***/
+.restaurant_heart{
+    position:relative;
+    left:90%;
+    bottom:20%;
+}
 button{
-    float:right;
-    margin-top:-50px;
-    margin-right:20px;
     border:none;
     background: none;
     padding:0;
 }
-                            /***Coeur qui se remplit***/
-
- .restaurant_heart .i:hover{
-    font-weight: 900;
+.fa-heart::after{
+    content: "\f004";
+    font-weight:900;
+    position: absolute;
+    left:0;
     color:$color_primary;
-    animation:heart 5s;
-
+    transform:scale(0);
 }
-@keyframes heart{
-    from{
-        opacity:0;
-    }
-    to{
-        opacity:1;
-    }
+button:hover> i::after{
+    transform:scale(1);
+    transition: transform 1s;
 }
 
-                            /***Animation glissade***/
 
-.choice_food1:hover,.choice_food2:hover,.choice_food3:hover{
+
+ /***Animation glissade carte***/
+
+.choice_food1:hover,.choice_food2:hover,.choice_food3:hover,.choice_food4{
     .icone{
         background-color: $color-tertiary;
         transform:scale(1);
@@ -225,7 +227,7 @@ button{
 
 }
                             
-                                                        /****Animation apparition***/
+    /****Animation apparition carte***/
                             
 .choice_food1{
     animation:apparition 1s;
