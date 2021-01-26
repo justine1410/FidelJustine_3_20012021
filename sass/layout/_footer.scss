@@ -24,4 +24,9 @@ footer{
         margin:4px;
     }
 }
+@media screen and (min-width:800px) and (max-width:1700px){
+    footer{
+        align-items: center;
+    }
+}
 

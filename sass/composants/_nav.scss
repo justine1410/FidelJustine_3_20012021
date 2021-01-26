@@ -57,3 +57,39 @@ nav{
     }
     
 }
+nav .photos_resto img{
+    height: 253px;
+    object-fit: cover;
+    width:100%;
+    }
+
+                    /***format desktop***/
+@media screen and (min-width:800px) and (max-width:1700px){
+    nav{
+        align-items: center;
+        .nav_choix{
+            display:flex;
+            flex-direction: row; 
+        }
+    }
+    nav a{
+        flex-direction:column;
+        align-items: center;
+        width: 30%;
+        p{
+            bottom:30px;
+            right: 0;
+            width: 8%;
+        }
+        .nav_icone{
+            left:0;
+            bottom:30px;
+            font-size:3em;
+        }
+        h3{
+            left:0;
+            font-size:1.5em;
+            bottom:20px;
+        }
+    }
+}

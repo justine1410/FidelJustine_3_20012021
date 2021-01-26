@@ -1,6 +1,5 @@
 #bloc_page
 {
-    max-width:750px;
     font-family:'Roboto',arial;
 }
 body{
@@ -28,7 +27,6 @@ body{
     top:50%;
     opacity: 0;
     animation: loading 4s;
-
 }
 .loading img{
     width: 80%;
@@ -49,8 +47,8 @@ body{
 .loading .I1{
     font-size:2em;
     margin:0;
-    color:$color_primary;
-    position: absolute;
+    color:$color-primary;
+    position:absolute;
     left:25%;
     top:40%; 
     animation: rotation 2s infinite; 
@@ -91,5 +89,12 @@ body{
     }
     100%{
         transform:rotate(3turn);
+    }
+}
+
+                    /***format desktop***/
+@media screen and (min-width:800px) and (max-width:1700px){
+    .loading{
+        left:35%;
     }
 }

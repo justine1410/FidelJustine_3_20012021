@@ -1,6 +1,5 @@
 @charset "UTF-8";
 #bloc_page {
-  max-width: 750px;
   font-family: "Roboto", arial;
 }
 
@@ -94,60 +93,76 @@ body {
     transform: rotate(3turn);
   }
 }
-.header_logo_index {
+/***format desktop***/
+@media screen and (min-width: 800px) and (max-width: 1700px) {
+  .loading {
+    left: 35%;
+  }
+}
+header h1 {
   display: flex;
   justify-content: center;
   width: 100%;
   height: 32px;
-  background-color: #f6f6f6;
-  padding-top: 10px;
-}
-.header_logo_index img {
-  width: 50%;
+  font-family: "Shrikhand", arial;
 }
 
+@media screen and (min-width: 800px) and (max-width: 1700px) {
+  header {
+    height: 120px;
+  }
+  header h1 {
+    font-size: 5em;
+    margin: 0;
+  }
+}
 .header_carte {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 320px;
-  padding-top: 10px;
 }
 .header_carte .fa-arrow-left {
   padding-left: 10px;
 }
-.header_carte .header_logo {
+.header_carte .h1 {
   display: flex;
   justify-content: center;
   width: 100%;
   height: 32px;
   padding-top: 10px;
 }
-.header_carte .header_logo img {
+.header_carte .h1 img {
   width: 50%;
 }
 .header_carte .logo {
   display: flex;
-  align-items: center;
-  margin-bottom: 24px;
-}
-.header_carte .photos_resto img {
-  height: 253px;
-  object-fit: cover;
-  width: 100%;
+  align-items: baseline;
 }
 
+@media screen and (min-width: 800px) and (max-width: 1700px) {
+  .logo .fa-arrow-left {
+    font-size: 4em;
+    color: black;
+  }
+  .logo h1 {
+    font-size: 5em;
+    margin: 0;
+  }
+
+  /***Header carte***/
+  header .photos_resto {
+    margin-top: 90px;
+  }
+}
 /***article page d'acceuil***/
 /***animation loading***/
 article {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   height: 285px;
   background-color: #f6f6f6;
 }
 article .article_map {
-  margin-top: 10px;
   width: 100%;
   height: 50px;
   display: flex;
@@ -249,6 +264,43 @@ nav a:hover .nav_icone {
   color: #9356dc;
 }
 
+nav .photos_resto img {
+  height: 253px;
+  object-fit: cover;
+  width: 100%;
+}
+
+/***format desktop***/
+@media screen and (min-width: 800px) and (max-width: 1700px) {
+  nav {
+    align-items: center;
+  }
+  nav .nav_choix {
+    display: flex;
+    flex-direction: row;
+  }
+
+  nav a {
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+  }
+  nav a p {
+    bottom: 30px;
+    right: 0;
+    width: 8%;
+  }
+  nav a .nav_icone {
+    left: 0;
+    bottom: 30px;
+    font-size: 3em;
+  }
+  nav a h3 {
+    left: 0;
+    font-size: 1.5em;
+    bottom: 20px;
+  }
+}
 /***Page principale***/
 section {
   display: flex;
@@ -327,68 +379,83 @@ section .restaurant figcaption .restaurant_title p {
 }
 
 /****page carte***/
-.resto h2 {
-  font-family: "Shrikhand", arial;
-  margin-top: -40px;
-  padding: 10px;
-  border-radius: 20px;
+section .nom {
+  position: absolute;
+  bottom: 290px;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding-top: 20px;
   background-color: #f6f6f6;
+  font-family: "Shrikhand", arial;
+}
+section .nom .nom-resto {
   display: flex;
-  align-items: baseline;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 15px;
 }
 
-.choice {
+section .restaurant_heart_2 {
+  position: relative;
+  width: 5%;
+}
+
+.resto {
+  position: relative;
+  top: 20px;
+}
+.resto .choice {
   width: 90%;
-  padding-left: 5px;
   margin-bottom: 30px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.choice h3 {
+.resto .choice h3 {
   font-weight: unset;
   font-size: 16px;
   padding-bottom: 8px;
   width: 20%;
   border-bottom: solid #99e2d0;
 }
-.choice h4 {
+.resto .choice h4 {
   margin-top: 10px;
   margin-bottom: 0;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.choice p {
+.resto .choice p {
   margin: 0;
   width: 100%;
   font-size: 14px;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.choice .choice_food1, .choice .choice_food2, .choice .choice_food3, .choice .choice_food4 {
+.resto .choice .choice_food1, .resto .choice .choice_food2, .resto .choice .choice_food3, .resto .choice .choice_food4 {
   display: flex;
-  width: 100%;
   height: 60px;
-  margin: 5px;
+  margin-bottom: 10px;
   background-color: white;
   border-radius: 20px;
   padding: 0;
   box-shadow: -1px 4px 6px #d1d1d1;
   cursor: pointer;
 }
-.choice .choice_food1 .choice_title, .choice .choice_food2 .choice_title, .choice .choice_food3 .choice_title, .choice .choice_food4 .choice_title {
+.resto .choice .choice_food1 .choice_title, .resto .choice .choice_food2 .choice_title, .resto .choice .choice_food3 .choice_title, .resto .choice .choice_food4 .choice_title {
   position: relative;
   width: 100%;
   padding-left: 10px;
 }
-.choice .choice_food1 .choice_title .prix, .choice .choice_food2 .choice_title .prix, .choice .choice_food3 .choice_title .prix, .choice .choice_food4 .choice_title .prix {
+.resto .choice .choice_food1 .choice_title .prix, .resto .choice .choice_food2 .choice_title .prix, .resto .choice .choice_food3 .choice_title .prix, .resto .choice .choice_food4 .choice_title .prix {
   display: flex;
   justify-content: center;
   position: absolute;
-  right: 10px;
-  bottom: 20px;
+  right: 5px;
+  bottom: 10px;
+  font-weight: bold;
 }
 
 .icone {
@@ -406,12 +473,14 @@ section .restaurant figcaption .restaurant_title p {
   text-decoration: none;
 }
 .icone .fa-check-circle {
-  margin-right: 15px;
-  margin-bottom: 20px;
+  position: relative;
+  right: 50%;
+  bottom: 60%;
 }
 
 .valid {
   color: white;
+  position: relative;
 }
 
 section .btn_commande {
@@ -458,7 +527,6 @@ button:hover > i::after {
 /***Animation glissade carte***/
 .choice_food1:hover .icone, .choice_food2:hover .icone, .choice_food3:hover .icone, .choice_food4:hover .icone {
   background-color: #99e2d0;
-  transform: scale(1);
   transform-origin: 100%;
   transition: 2000ms;
   width: 100%;
@@ -499,6 +567,89 @@ button:hover > i::after {
     width: 100%;
   }
 }
+/***format desktop***/
+@media screen and (min-width: 800px) and (max-width: 1700px) {
+  .choix_resto .restaurat:nth-child(1) {
+    order: 1;
+  }
+
+  .choix_resto .restaurant:nth-child(2) {
+    order: 3;
+  }
+
+  .choix_resto .restaurant:nth-child(3) {
+    order: 2;
+  }
+
+  .choix_resto .restaurant:nth-child(4) {
+    order: 4;
+  }
+
+  /***Section carte***/
+  section {
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 20px;
+  }
+  section .nom {
+    bottom: 300px;
+  }
+  section h3 {
+    margin-left: 0;
+  }
+  section .choix_resto {
+    height: 580px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  section .restaurant {
+    width: 45%;
+  }
+
+  section .nom .nom-resto {
+    justify-content: center;
+  }
+  section .nom .nom-resto h2 {
+    position: relative;
+    right: 5%;
+    font-size: 2em;
+    margin: 0;
+  }
+  section .nom .nom-resto .heart {
+    font-size: 25px;
+  }
+
+  .resto {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .resto h2 {
+    padding-right: 600px;
+    padding-left: 500px;
+    font-size: 2em;
+  }
+  .resto .choice {
+    align-items: center;
+    margin-top: 30px;
+  }
+  .resto .choice h3 {
+    width: 8%;
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+  }
+  .resto .choice .choice_food1, .resto .choice .choice_food2, .resto .choice .choice_food3, .resto .choice .choice_food4 {
+    width: 100%;
+    margin: 20px;
+    margin-left: 15%;
+  }
+
+  section .btn_commande input {
+    width: 60%;
+  }
+}
 footer {
   display: flex;
   flex-direction: column;
@@ -524,6 +675,12 @@ footer a {
 }
 footer .fa-utensils {
   margin: 4px;
+}
+
+@media screen and (min-width: 800px) and (max-width: 1700px) {
+  footer {
+    align-items: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
