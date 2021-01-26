@@ -383,7 +383,7 @@ section .restaurant figcaption .restaurant_title p {
 /****page carte***/
 section .nom {
   position: absolute;
-  top: 45%;
+  top: 300px;
   width: 100%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
