@@ -383,7 +383,7 @@ section .restaurant figcaption .restaurant_title p {
 /****page carte***/
 section .nom {
   position: absolute;
-  bottom: 290px;
+  top: 45%;
   width: 100%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -405,7 +405,7 @@ section .restaurant_heart_2 {
 
 .resto {
   position: relative;
-  top: 20px;
+  top: 40px;
 }
 .resto .choice {
   width: 90%;
@@ -570,7 +570,7 @@ button:hover > i::after {
   }
 }
 /***format desktop***/
-@media screen and (min-width: 800px) and (max-width: 1700px) {
+@media screen and (min-width: 750px) and (max-width: 1700px) {
   .choix_resto .restaurat:nth-child(1) {
     order: 1;
   }
@@ -653,6 +653,7 @@ button:hover > i::after {
     width: 60%;
   }
 }
+/***Format tablette***/
 footer {
   display: flex;
   flex-direction: column;
