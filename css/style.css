@@ -184,19 +184,19 @@ article .presentation {
   flex-direction: column;
   align-items: center;
 }
-article .presentation p {
+article .presentation p strong {
   text-align: center;
   font-size: large;
-  margin-bottom: 0;
-  font-weight: bold;
+  margin: 0;
   width: 55%;
 }
-article .presentation h1 {
+article .presentation h2 {
   text-align: center;
   font-style: normal;
   font-size: 14px;
   font-weight: normal;
   width: 80%;
+  margin-bottom: 0;
 }
 article .presentation input {
   width: 60%;
@@ -205,6 +205,7 @@ article .presentation input {
   background: linear-gradient(to top left, #9356dc, #ff79da);
   color: white;
   font-weight: bold;
+  margin-top: 20px;
 }
 
 /***Page d'acceuil***/
@@ -334,6 +335,7 @@ section .restaurant figure {
   margin: 0;
   display: inline-block;
   position: relative;
+  width: 100%;
 }
 section .restaurant figure .news {
   z-index: 1;
@@ -603,6 +605,7 @@ button:hover > i::after {
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
+    width: 100%;
   }
   section .restaurant {
     width: 45%;

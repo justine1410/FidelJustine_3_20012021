@@ -27,19 +27,19 @@ article{
         display: flex;
         flex-direction: column;
         align-items: center;
-        p{
+        p strong{
             text-align: center;
             font-size:large;
-            margin-bottom:0;
-            font-weight: bold;
+            margin:0;
             width: 55%;
         }
-        h1{
+        h2{
             text-align: center;
             font-style: normal;
             font-size:14px;
             font-weight: normal;
             width: 80%;
+            margin-bottom:0;
         }
         input{
             width: 60%;
@@ -48,6 +48,7 @@ article{
             background:linear-gradient(to top left,$color-primary, $color_secondary);
             color:white;
             font-weight: bold;
+            margin-top:20px;
         }
     }
 }

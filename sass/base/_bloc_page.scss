@@ -44,39 +44,33 @@ body{
     }
 }
 /***animation couvert loading***/
-.loading .I1{
+@mixin couvert_load{
     font-size:2em;
     margin:0;
     color:$color-primary;
     position:absolute;
+}
+.loading .I1{
+    @include couvert_load;
     left:25%;
     top:40%; 
     animation: rotation 2s infinite; 
 }
 
 .loading .I2{
-    font-size:2em;
-    margin:0;
-    color:$color_primary;
-    position: absolute;;
+    @include couvert_load;
     left:85%;
     bottom:80%;
     animation: rotation 2s infinite;
 }
 .loading .I3{
-    font-size:2em;
-    margin:0;
-    color:$color_primary;
-    position: absolute;;
+    @include couvert_load;
     right: 120%;
     bottom:80%;
     animation: rotation 2s infinite;
 }
 .loading .I4{
-    font-size:2em;
-    margin:0;
-    color:$color_primary;
-    position: absolute;;
+    @include couvert_load;
     bottom:120%;
     left:25%;
     animation: rotation 2s infinite;

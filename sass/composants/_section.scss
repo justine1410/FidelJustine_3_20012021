@@ -32,6 +32,7 @@ section .restaurant{
         margin:0;
         display: inline-block;
         position:relative;
+        width: 100%;
     }
     figure .news{
         z-index:1;
@@ -292,6 +293,7 @@ button:hover> i::after{
             flex-direction: column;
             align-items: center;
             flex-wrap: wrap;
+            width: 100%;
         }
         .restaurant{
             width: 45%;
