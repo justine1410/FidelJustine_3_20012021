@@ -99,6 +99,11 @@ body {
     left: 35%;
   }
 }
+@media screen and (min-width: 750px) and (max-width: 1100px) {
+  .loading {
+    left: 35%;
+  }
+}
 header h1 {
   display: flex;
   justify-content: center;
@@ -152,6 +157,20 @@ header h1 {
   /***Header carte***/
   header .photos_resto {
     margin-top: 90px;
+  }
+}
+@media screen and (min-width: 750px) and (max-width: 1700px) {
+  .logo .fa-arrow-left {
+    font-size: 3em;
+    color: black;
+  }
+  .logo h1 {
+    font-size: 4em;
+    margin: 0;
+  }
+
+  .header_carte {
+    height: 100px;
   }
 }
 /***article page d'acceuil***/
@@ -300,6 +319,43 @@ nav .photos_resto img {
     left: 0;
     font-size: 1.5em;
     bottom: 20px;
+  }
+
+  nav img {
+    height: 300px;
+  }
+}
+@media screen and (min-width: 750px) and (max-width: 1100px) {
+  nav {
+    align-items: center;
+  }
+  nav .nav_choix {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  nav a {
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    height: 100px;
+  }
+  nav a p {
+    bottom: 30px;
+    right: 0;
+    width: 8%;
+    margin-bottom: 2px;
+  }
+  nav a .nav_icone {
+    left: 0;
+    bottom: 30px;
+    font-size: 2em;
+  }
+  nav a h3 {
+    font-size: 1.5em;
+    bottom: 20px;
+    margin: 0;
   }
 }
 /***Page principale***/
@@ -594,7 +650,8 @@ button:hover > i::after {
     border-radius: 20px;
   }
   section .nom {
-    bottom: 300px;
+    height: 100px;
+    top: 45%;
   }
   section h3 {
     margin-left: 0;
@@ -626,7 +683,6 @@ button:hover > i::after {
 
   .resto {
     width: 100%;
-    margin-top: 50px;
   }
   .resto h2 {
     padding-right: 600px;
@@ -654,6 +710,11 @@ button:hover > i::after {
   }
 }
 /***Format tablette***/
+@media screen and (min-width: 750px) and (max-width: 1100px) {
+  .nom {
+    top: 32%;
+  }
+}
 footer {
   display: flex;
   flex-direction: column;
@@ -682,6 +743,11 @@ footer .fa-utensils {
 }
 
 @media screen and (min-width: 800px) and (max-width: 1700px) {
+  footer {
+    align-items: center;
+  }
+}
+@media screen and (min-width: 750px) and (max-width: 1100px) {
   footer {
     align-items: center;
   }

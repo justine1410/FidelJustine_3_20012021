@@ -282,7 +282,8 @@ button:hover> i::after{
         justify-content: space-around;
         border-radius: 20px;
         .nom{
-            bottom:300px;
+            height: 100px;
+            top:45%;
         }
         h3{
             margin-left:0;
@@ -313,7 +314,6 @@ button:hover> i::after{
     }
     .resto{
         width: 100%;
-        margin-top:50px;
         h2{
             padding-right:600px;
             padding-left:500px;
@@ -342,5 +342,7 @@ button:hover> i::after{
 }
             /***Format tablette***/
 @media screen and (min-width:750px) and (max-width:1100px){
-
+    .nom{
+        top:32%;
+    }
 }

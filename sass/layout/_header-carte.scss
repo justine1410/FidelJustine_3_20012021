@@ -37,3 +37,19 @@
         margin-top:90px;
     }
 }
+@media screen and (min-width:750px) and (max-width:1700px){
+    .logo{
+        .fa-arrow-left{
+            font-size:3em;
+            color:black;
+        }
+        h1{
+            font-size:4em;
+            margin:0;
+        }
+    }
+    .header_carte{
+        height: 100px;
+    }
+   
+}
