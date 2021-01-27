@@ -49,6 +49,7 @@ nav{
         
         &:hover{
             background-color: $color_primary_light;
+            box-shadow: -1px 4px 2px $color_input_darken;
             border:none;
             .nav_icone{
                 color:$color_primary;

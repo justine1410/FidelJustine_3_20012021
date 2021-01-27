@@ -214,7 +214,11 @@ button{
 }
 button:hover> i::after{
     transform: scale(1);
+    transform-origin: bottom;
     transition: transform 1s;
+}
+button:hover>i{
+    color:white;
 }
  /***Animation glissade carte***/
 
@@ -248,10 +252,10 @@ button:hover> i::after{
     animation:apparition 1s;
 }
 .choice_food2{
-    animation:apparition 2s;
+    animation:apparition 3s;
 }
 .choice_food3{
-    animation:apparition 3s;
+    animation:apparition 5s;
 }
 
 @keyframes apparition{

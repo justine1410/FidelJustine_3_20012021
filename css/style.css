@@ -9,17 +9,7 @@ body {
 
 /***animation page d'acceuil***/
 #bloc_page .acceuil {
-  -webkit-animation: fixe 8s;
-          animation: fixe 8s;
-}
-
-@-webkit-keyframes fixe {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+  animation: fixe 8s;
 }
 
 @keyframes fixe {
@@ -37,23 +27,13 @@ body {
   left: 25%;
   top: 50%;
   opacity: 0;
-  -webkit-animation: loading 4s;
-          animation: loading 4s;
+  animation: loading 3s;
 }
 
 .loading img {
   width: 80%;
   position: relative;
   right: 10%;
-}
-
-@-webkit-keyframes loading {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
 }
 
 @keyframes loading {
@@ -72,8 +52,7 @@ body {
   position: absolute;
   left: 25%;
   top: 40%;
-  -webkit-animation: rotation 2s infinite;
-          animation: rotation 2s infinite;
+  animation: rotation 2s infinite;
 }
 
 .loading .I2 {
@@ -83,8 +62,7 @@ body {
   position: absolute;
   left: 85%;
   bottom: 80%;
-  -webkit-animation: rotation 2s infinite;
-          animation: rotation 2s infinite;
+  animation: rotation 2s infinite;
 }
 
 .loading .I3 {
@@ -94,8 +72,7 @@ body {
   position: absolute;
   right: 120%;
   bottom: 80%;
-  -webkit-animation: rotation 2s infinite;
-          animation: rotation 2s infinite;
+  animation: rotation 2s infinite;
 }
 
 .loading .I4 {
@@ -105,17 +82,7 @@ body {
   position: absolute;
   bottom: 120%;
   left: 25%;
-  -webkit-animation: rotation 2s infinite;
-          animation: rotation 2s infinite;
-}
-
-@-webkit-keyframes rotation {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(3turn);
-  }
+  animation: rotation 2s infinite;
 }
 
 @keyframes rotation {
@@ -311,6 +278,7 @@ nav a h3 {
 }
 nav a:hover {
   background-color: #f2eafb;
+  box-shadow: -1px 4px 2px #d1d1d1;
   border: none;
 }
 nav a:hover .nav_icone {
@@ -319,8 +287,7 @@ nav a:hover .nav_icone {
 
 nav .photos_resto img {
   height: 253px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 100%;
 }
 
@@ -446,8 +413,7 @@ section .restaurant figure h4 {
 section .restaurant figure img {
   width: 100%;
   height: 172px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
@@ -614,7 +580,12 @@ button {
 
 button:hover > i::after {
   transform: scale(1);
+  transform-origin: bottom;
   transition: transform 1s;
+}
+
+button:hover > i {
+  color: white;
 }
 
 /***Animation glissade carte***/
@@ -641,27 +612,15 @@ button:hover > i::after {
 
 /****Animation apparition carte***/
 .choice_food1 {
-  -webkit-animation: apparition 1s;
-          animation: apparition 1s;
+  animation: apparition 1s;
 }
 
 .choice_food2 {
-  -webkit-animation: apparition 2s;
-          animation: apparition 2s;
+  animation: apparition 3s;
 }
 
 .choice_food3 {
-  -webkit-animation: apparition 3s;
-          animation: apparition 3s;
-}
-
-@-webkit-keyframes apparition {
-  0% {
-    opacity: 0;
-  }
-  to {
-    width: 100%;
-  }
+  animation: apparition 5s;
 }
 
 @keyframes apparition {
@@ -799,3 +758,5 @@ footer .fa-utensils {
     align-items: center;
   }
 }
+
+/*# sourceMappingURL=style.css.map */
