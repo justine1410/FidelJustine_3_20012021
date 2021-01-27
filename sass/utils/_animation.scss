@@ -22,26 +22,30 @@
     @include couvert_load;
     left:25%;
     top:40%; 
-    animation: rotation 2s infinite; 
+    transform: rotate(2turn); 
+    transition: transform 1s ease-in-out;
 }
 
 .loading .I2{
     @include couvert_load;
     left:85%;
     bottom:80%;
-    animation: rotation 2s infinite;
+    transform: rotate(2turn);
+    transition: transform 1s ease-in-out;
 }
 .loading .I3{
     @include couvert_load;
     right: 120%;
     bottom:80%;
-    animation: rotation 2s infinite;
+    transform: rotate(2turn);
+    transition: transform 1s ease-in-out;
 }
 .loading .I4{
     @include couvert_load;
     bottom:120%;
     left:25%;
-    animation: rotation 2s infinite;
+    transform: rotate(2turn);
+    transition: transform 1s ease-in-out;
 }
 
                     /***Animation coeur qui se remplit acceuil***/

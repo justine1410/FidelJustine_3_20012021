@@ -30,14 +30,6 @@ $color_fond_page: #f6f6f6;
     }
 }
     /***couvert spinner***/
-@keyframes rotation{
-    0%{
-       transform:rotate(0);
-    }
-    100%{
-        transform:rotate(3turn);
-    }
-}
 @mixin couvert_load{
     font-size:2em;
     margin:0;

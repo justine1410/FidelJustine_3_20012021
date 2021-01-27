@@ -19,14 +19,6 @@
   }
 }
 /***couvert spinner***/
-@keyframes rotation {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(3turn);
-  }
-}
 /***Apparition carte***/
 @keyframes apparition {
   0% {
@@ -86,7 +78,8 @@ body {
   position: absolute;
   left: 25%;
   top: 40%;
-  animation: rotation 2s infinite;
+  transform: rotate(2turn);
+  transition: transform 1s ease-in-out;
 }
 
 .loading .I2 {
@@ -96,7 +89,8 @@ body {
   position: absolute;
   left: 85%;
   bottom: 80%;
-  animation: rotation 2s infinite;
+  transform: rotate(2turn);
+  transition: transform 1s ease-in-out;
 }
 
 .loading .I3 {
@@ -106,7 +100,8 @@ body {
   position: absolute;
   right: 120%;
   bottom: 80%;
-  animation: rotation 2s infinite;
+  transform: rotate(2turn);
+  transition: transform 1s ease-in-out;
 }
 
 .loading .I4 {
@@ -116,7 +111,8 @@ body {
   position: absolute;
   bottom: 120%;
   left: 25%;
-  animation: rotation 2s infinite;
+  transform: rotate(2turn);
+  transition: transform 1s ease-in-out;
 }
 
 /***Animation coeur qui se remplit acceuil***/
