@@ -14,6 +14,9 @@
   0% {
     opacity: 1;
   }
+  50% {
+    opacity: 0.5;
+  }
   100% {
     opacity: 0;
   }
@@ -61,7 +64,7 @@ body {
   left: 25%;
   top: 50%;
   opacity: 0;
-  animation: loading 3s;
+  animation: loading 4s;
 }
 
 .loading img {
@@ -79,7 +82,8 @@ body {
   left: 25%;
   top: 40%;
   transform: rotate(2turn);
-  transition: transform 1s ease-in-out;
+  transition: transform 500ms ease-in-out;
+  transition-duration: 4s;
 }
 
 .loading .I2 {
@@ -90,7 +94,8 @@ body {
   left: 85%;
   bottom: 80%;
   transform: rotate(2turn);
-  transition: transform 1s ease-in-out;
+  transition: transform 500ms ease-in-out;
+  transition-duration: 4s;
 }
 
 .loading .I3 {
@@ -101,7 +106,8 @@ body {
   right: 120%;
   bottom: 80%;
   transform: rotate(2turn);
-  transition: transform 1s ease-in-out;
+  transition: transform 500ms ease-in-out;
+  transition-duration: 4s;
 }
 
 .loading .I4 {
@@ -112,7 +118,8 @@ body {
   bottom: 120%;
   left: 25%;
   transform: rotate(2turn);
-  transition: transform 1s ease-in-out;
+  transition: transform 500ms ease-in-out;
+  transition-duration: 4s;
 }
 
 /***Animation coeur qui se remplit acceuil***/
@@ -139,12 +146,13 @@ button:hover > i {
 .choice_food1:hover .icone, .choice_food2:hover .icone, .choice_food3:hover .icone, .choice_food4:hover .icone {
   background-color: #99e2d0;
   transform-origin: 100%;
-  transition: 2000ms;
-  width: 100%;
+  transition: 3000ms;
+  width: 30%;
 }
 .choice_food1:hover .fa-check-circle, .choice_food2:hover .fa-check-circle, .choice_food3:hover .fa-check-circle, .choice_food4:hover .fa-check-circle {
   transform: rotate(3turn);
-  transition: 600ms;
+  transition: 2s;
+  transition-delay: 500ms;
 }
 .choice_food1:hover p, .choice_food2:hover p, .choice_food3:hover p, .choice_food4:hover p {
   width: 60%;
@@ -299,6 +307,10 @@ nav {
   flex-direction: column;
   width: 100%;
 }
+nav h2 {
+  width: 80%;
+  margin-left: 15px;
+}
 nav .nav_choix {
   display: flex;
   flex-direction: column;
@@ -361,6 +373,10 @@ nav .photos_resto img {
 @media screen and (min-width: 800px) and (max-width: 1700px) {
   nav {
     align-items: center;
+  }
+  nav h2 {
+    width: 100%;
+    text-align: center;
   }
   nav .nav_choix {
     display: flex;

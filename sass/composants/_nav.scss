@@ -3,6 +3,10 @@ nav{
     display: flex;
     flex-direction: column;
     width: 100%;
+    h2{
+        width: 80%;
+        margin-left:15px;
+    }
     .nav_choix{
         display:flex;
         flex-direction:column;
@@ -67,6 +71,11 @@ nav .photos_resto img{
 @media screen and (min-width:800px) and (max-width:1700px){
     nav{
         align-items: center;
+        h2{
+            width: 100%;
+            text-align: center;
+        }
+
         .nav_choix{
             display:flex;
             flex-direction: row; 

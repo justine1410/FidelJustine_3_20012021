@@ -21,8 +21,10 @@ $color_fond_page: #f6f6f6;
     /***spinner***/
 @keyframes loading{
     0%{
-        opacity: 1;
-        
+        opacity: 1;    
+    }
+    50%{
+        opacity: 0.5;
     }
     100%{
         opacity:0;

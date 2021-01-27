@@ -10,7 +10,7 @@
     left:25%;
     top:50%;
     opacity: 0;
-    animation: loading 3s;
+    animation: loading 4s;
 }
 .loading img{
     width: 80%;
@@ -23,7 +23,8 @@
     left:25%;
     top:40%; 
     transform: rotate(2turn); 
-    transition: transform 1s ease-in-out;
+    transition: transform 500ms ease-in-out;
+    transition-duration: 4s;
 }
 
 .loading .I2{
@@ -31,21 +32,24 @@
     left:85%;
     bottom:80%;
     transform: rotate(2turn);
-    transition: transform 1s ease-in-out;
+    transition: transform 500ms ease-in-out;
+    transition-duration: 4s;
 }
 .loading .I3{
     @include couvert_load;
     right: 120%;
     bottom:80%;
     transform: rotate(2turn);
-    transition: transform 1s ease-in-out;
+    transition: transform 500ms ease-in-out;
+    transition-duration: 4s;
 }
 .loading .I4{
     @include couvert_load;
     bottom:120%;
     left:25%;
     transform: rotate(2turn);
-    transition: transform 1s ease-in-out;
+    transition: transform 500ms ease-in-out;
+    transition-duration: 4s;
 }
 
                     /***Animation coeur qui se remplit acceuil***/
@@ -72,12 +76,13 @@ button:hover>i{
     .icone{
         background-color: $color-tertiary; 
         transform-origin: 100%;
-        transition:2000ms;
-        width: 100%;
+        transition:3000ms;
+        width: 30%;
     }
     .fa-check-circle{
         transform:rotate(3turn);
-        transition:600ms;  
+        transition:2s;  
+        transition-delay:500ms;
     }
     p{
         width: 60%;
