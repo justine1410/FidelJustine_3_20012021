@@ -6,96 +6,16 @@ body{
     margin:0;
 }
 
-/***animation page d'acceuil***/
-#bloc_page .acceuil{
-    animation:fixe 8s;
-
-}
-@keyframes fixe{
-    0%{
-        opacity:0;
-    }
-    100%{
-        opacity:1;
-    }
-}
-/***animation loading***/
-.loading{
-    position:absolute;
-    height: 200px;
-    left:25%;
-    top:50%;
-    opacity: 0;
-    animation: loading 3s;
-}
-.loading img{
-    width: 80%;
-    position:relative;
-    right:10%;
-}
-@keyframes loading{
-    0%{
-        opacity: 1;
-        
-    }
-    100%{
-        opacity:0;
-        
-    }
-}
-/***animation couvert loading***/
-@mixin couvert_load{
-    font-size:2em;
-    margin:0;
-    color:$color-primary;
-    position:absolute;
-}
-.loading .I1{
-    @include couvert_load;
-    left:25%;
-    top:40%; 
-    animation: rotation 2s infinite; 
-}
-
-.loading .I2{
-    @include couvert_load;
-    left:85%;
-    bottom:80%;
-    animation: rotation 2s infinite;
-}
-.loading .I3{
-    @include couvert_load;
-    right: 120%;
-    bottom:80%;
-    animation: rotation 2s infinite;
-}
-.loading .I4{
-    @include couvert_load;
-    bottom:120%;
-    left:25%;
-    animation: rotation 2s infinite;
-
-    
-}
-@keyframes rotation{
-    0%{
-       transform:rotate(0);
-    }
-    100%{
-        transform:rotate(3turn);
-    }
-}
-
                     /***format desktop***/
 @media screen and (min-width:800px) and (max-width:1700px){
-    .loading{
+    body .loading{
         left:35%;
     }
 }
 
-
+                    /***foramt tablette***/
 @media screen and (min-width:750px) and (max-width:1100px){
-    .loading{
+    body .loading{
         left:35%;
     }
 }

@@ -8,3 +8,48 @@ $color_input_darken: darken(#eaeaea,10%);
 $color_icone:#7e7e7e;
 $color_fond_page: #f6f6f6;
 
+                        /***loading***/
+    /***page d'acceuil ouverture***/
+@keyframes fixe{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+}
+    /***spinner***/
+@keyframes loading{
+    0%{
+        opacity: 1;
+        
+    }
+    100%{
+        opacity:0;
+        
+    }
+}
+    /***couvert spinner***/
+@keyframes rotation{
+    0%{
+       transform:rotate(0);
+    }
+    100%{
+        transform:rotate(3turn);
+    }
+}
+@mixin couvert_load{
+    font-size:2em;
+    margin:0;
+    color:$color-primary;
+    position:absolute;
+}
+    /***Apparition carte***/
+@keyframes apparition{
+    0%{
+        opacity: 0;
+    }
+    to{
+        width: 100%;
+    }
+} 
