@@ -9,7 +9,17 @@ body {
 
 /***animation page d'acceuil***/
 #bloc_page .acceuil {
-  animation: fixe 8s;
+  -webkit-animation: fixe 8s;
+          animation: fixe 8s;
+}
+
+@-webkit-keyframes fixe {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes fixe {
@@ -27,13 +37,23 @@ body {
   left: 25%;
   top: 50%;
   opacity: 0;
-  animation: loading 4s;
+  -webkit-animation: loading 4s;
+          animation: loading 4s;
 }
 
 .loading img {
   width: 80%;
   position: relative;
   right: 10%;
+}
+
+@-webkit-keyframes loading {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 @keyframes loading {
@@ -52,7 +72,8 @@ body {
   position: absolute;
   left: 25%;
   top: 40%;
-  animation: rotation 2s infinite;
+  -webkit-animation: rotation 2s infinite;
+          animation: rotation 2s infinite;
 }
 
 .loading .I2 {
@@ -62,7 +83,8 @@ body {
   position: absolute;
   left: 85%;
   bottom: 80%;
-  animation: rotation 2s infinite;
+  -webkit-animation: rotation 2s infinite;
+          animation: rotation 2s infinite;
 }
 
 .loading .I3 {
@@ -72,7 +94,8 @@ body {
   position: absolute;
   right: 120%;
   bottom: 80%;
-  animation: rotation 2s infinite;
+  -webkit-animation: rotation 2s infinite;
+          animation: rotation 2s infinite;
 }
 
 .loading .I4 {
@@ -82,7 +105,17 @@ body {
   position: absolute;
   bottom: 120%;
   left: 25%;
-  animation: rotation 2s infinite;
+  -webkit-animation: rotation 2s infinite;
+          animation: rotation 2s infinite;
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(3turn);
+  }
 }
 
 @keyframes rotation {
@@ -286,7 +319,8 @@ nav a:hover .nav_icone {
 
 nav .photos_resto img {
   height: 253px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
 }
 
@@ -412,7 +446,8 @@ section .restaurant figure h4 {
 section .restaurant figure img {
   width: 100%;
   height: 172px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
@@ -606,15 +641,27 @@ button:hover > i::after {
 
 /****Animation apparition carte***/
 .choice_food1 {
-  animation: apparition 1s;
+  -webkit-animation: apparition 1s;
+          animation: apparition 1s;
 }
 
 .choice_food2 {
-  animation: apparition 2s;
+  -webkit-animation: apparition 2s;
+          animation: apparition 2s;
 }
 
 .choice_food3 {
-  animation: apparition 3s;
+  -webkit-animation: apparition 3s;
+          animation: apparition 3s;
+}
+
+@-webkit-keyframes apparition {
+  0% {
+    opacity: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 @keyframes apparition {
@@ -752,5 +799,3 @@ footer .fa-utensils {
     align-items: center;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
