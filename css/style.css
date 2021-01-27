@@ -146,16 +146,15 @@ button:hover > i {
 .choice_food1:hover .icone, .choice_food2:hover .icone, .choice_food3:hover .icone, .choice_food4:hover .icone {
   background-color: #99e2d0;
   transform-origin: 100%;
-  transition: 3000ms;
-  width: 30%;
+  transition-duration: 3s;
+  width: 20%;
 }
 .choice_food1:hover .fa-check-circle, .choice_food2:hover .fa-check-circle, .choice_food3:hover .fa-check-circle, .choice_food4:hover .fa-check-circle {
   transform: rotate(3turn);
   transition: 2s;
-  transition-delay: 500ms;
 }
 .choice_food1:hover p, .choice_food2:hover p, .choice_food3:hover p, .choice_food4:hover p {
-  width: 60%;
+  width: 100%;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
@@ -588,7 +587,7 @@ section .restaurant_heart_2 button {
 }
 .resto .choice p {
   margin: 0;
-  width: 100%;
+  width: 80%;
   font-size: 14px;
   overflow: hidden;
   text-overflow: ellipsis;

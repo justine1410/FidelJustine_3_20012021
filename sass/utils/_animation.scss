@@ -76,16 +76,15 @@ button:hover>i{
     .icone{
         background-color: $color-tertiary; 
         transform-origin: 100%;
-        transition:3000ms;
-        width: 30%;
+        transition-duration:3s;
+        width: 20%;
     }
     .fa-check-circle{
         transform:rotate(3turn);
         transition:2s;  
-        transition-delay:500ms;
     }
     p{
-        width: 60%;
+        width: 100%;
         text-overflow: ellipsis;
         white-space: nowrap;
     }
