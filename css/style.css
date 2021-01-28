@@ -1,6 +1,17 @@
 @charset "UTF-8";
 /***loading***/
 /***page d'acceuil ouverture***/
+@-webkit-keyframes fixe {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @keyframes fixe {
   0% {
     opacity: 0;
@@ -13,6 +24,20 @@
   }
 }
 /***spinner***/
+@-webkit-keyframes loading {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 @keyframes loading {
   0% {
     opacity: 1;
@@ -29,6 +54,14 @@
 }
 /***couvert spinner***/
 /***Apparition carte***/
+@-webkit-keyframes apparition {
+  0% {
+    opacity: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
 @keyframes apparition {
   0% {
     opacity: 0;
@@ -60,7 +93,8 @@ body {
 /***Page loading***/
 /***Page d'acceuil ouverture***/
 #bloc_page .acceuil {
-  animation: fixe 6s;
+  -webkit-animation: fixe 6s;
+          animation: fixe 6s;
 }
 
 /***spinner***/
@@ -70,7 +104,8 @@ body {
   left: 25%;
   top: 50%;
   opacity: 0;
-  animation: loading 4s;
+  -webkit-animation: loading 4s;
+          animation: loading 4s;
 }
 
 .loading img {
@@ -175,15 +210,18 @@ button:hover > i {
 
 /****Animation apparition carte***/
 .choice_food1 {
-  animation: apparition 1s;
+  -webkit-animation: apparition 1s;
+          animation: apparition 1s;
 }
 
 .choice_food2 {
-  animation: apparition 3s;
+  -webkit-animation: apparition 3s;
+          animation: apparition 3s;
 }
 
 .choice_food3 {
-  animation: apparition 5s;
+  -webkit-animation: apparition 5s;
+          animation: apparition 5s;
 }
 
 header h1 {
@@ -194,7 +232,7 @@ header h1 {
   font-family: "Shrikhand", arial;
 }
 
-@media screen and (min-width: 800px) and (max-width: 1700px) {
+@media screen and (min-width: 1100px) and (max-width: 1700px) {
   header {
     height: 120px;
   }
@@ -378,7 +416,8 @@ nav a:hover .nav_icone {
 
 nav .photos_resto img {
   height: 253px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
 }
 
@@ -509,6 +548,7 @@ section .restaurant figure h4 {
 section .restaurant figure img {
   width: 100%;
   height: 172px;
+  -o-object-fit: cover;
   object-fit: cover;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -878,5 +918,3 @@ footer .fa-utensils {
     align-items: center;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
