@@ -761,6 +761,83 @@ section .commande_btn:hover {
   .nom {
     top: 32%;
   }
+
+  .choix_resto .restaurat:nth-child(1) {
+    order: 1;
+  }
+
+  .choix_resto .restaurant:nth-child(2) {
+    order: 3;
+  }
+
+  .choix_resto .restaurant:nth-child(3) {
+    order: 2;
+  }
+
+  .choix_resto .restaurant:nth-child(4) {
+    order: 4;
+  }
+
+  section {
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 20px;
+  }
+  section .nom {
+    height: 100px;
+    top: 350px;
+  }
+  section h3 {
+    margin-left: 0;
+  }
+  section .choix_resto {
+    height: 580px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  section .restaurant {
+    width: 45%;
+  }
+
+  section .nom .nom-resto {
+    justify-content: center;
+  }
+  section .nom .nom-resto h2 {
+    position: relative;
+    right: 5%;
+    font-size: 2em;
+    margin: 0;
+  }
+  section .nom .nom-resto .heart {
+    font-size: 25px;
+  }
+
+  .resto {
+    width: 100%;
+  }
+  .resto h2 {
+    padding-right: 600px;
+    padding-left: 500px;
+    font-size: 2em;
+  }
+  .resto .choice {
+    align-items: center;
+    margin-top: 30px;
+  }
+  .resto .choice h3 {
+    width: 8%;
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+  }
+  .resto .choice .choice_food1, .resto .choice .choice_food2, .resto .choice .choice_food3, .resto .choice .choice_food4 {
+    width: 100%;
+    margin: 20px;
+    margin-left: 15%;
+  }
 }
 footer {
   display: flex;

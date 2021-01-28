@@ -295,4 +295,76 @@ section .commande_btn:hover{
     .nom{
         top:32%;
     }
+    .choix_resto .restaurat:nth-child(1){
+        order:1
+    }
+    .choix_resto .restaurant:nth-child(2){
+        order:3;
+    }
+    .choix_resto .restaurant:nth-child(3){
+        order:2
+    }
+    .choix_resto .restaurant:nth-child(4){
+        order:4;
+    }
+    
+   section{
+        align-items: center;
+        justify-content: space-around;
+        border-radius: 20px;
+        .nom{
+            height: 100px;
+            top:350px;
+        }
+        h3{
+            margin-left:0;
+        }
+        .choix_resto{
+            height: 580px;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+        .restaurant{
+            width: 45%;
+        }
+    }
+    section .nom .nom-resto{
+        justify-content: center;
+        h2{
+        position:relative;
+        right:5%;
+        font-size:2em;
+        margin:0;
+        }
+        .heart{
+            font-size:25px;
+        }
+    }
+    .resto{
+        width: 100%;
+        h2{
+            padding-right:600px;
+            padding-left:500px;
+            font-size:2em;
+        }
+        .choice{
+           align-items: center;
+           margin-top:30px;
+           h3{
+               width: 8%;
+               text-align: center;
+               font-weight: bold;
+               margin:0;
+           }
+           .choice_food1,.choice_food2,.choice_food3,.choice_food4{
+               width: 100%;
+               margin:20px;
+               margin-left:15%;
+               
+           }
+        }
+    }
 }
