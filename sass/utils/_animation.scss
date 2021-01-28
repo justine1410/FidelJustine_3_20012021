@@ -79,6 +79,9 @@ button:hover>i{
         transition-duration:3s;
         width: 20%;
     }
+    .icone:hover{
+        background-color:$color-tree_darken ;
+    }
     .fa-check-circle{
         transform:rotate(3turn);
         transition:2s;  
