@@ -14,6 +14,9 @@ $color_fond_page: #f6f6f6;
     0%{
         opacity:0;
     }
+    25%{
+        opacity: 0;
+    }
     100%{
         opacity:1;
     }
@@ -23,8 +26,11 @@ $color_fond_page: #f6f6f6;
     0%{
         opacity: 1;    
     }
+    25%{
+        opacity: 1;
+    }
     50%{
-        opacity: 0.5;
+        opacity: 1;
     }
     100%{
         opacity:0;

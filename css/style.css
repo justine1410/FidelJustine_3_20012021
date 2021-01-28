@@ -5,6 +5,9 @@
   0% {
     opacity: 0;
   }
+  25% {
+    opacity: 0;
+  }
   100% {
     opacity: 1;
   }
@@ -14,8 +17,11 @@
   0% {
     opacity: 1;
   }
+  25% {
+    opacity: 1;
+  }
   50% {
-    opacity: 0.5;
+    opacity: 1;
   }
   100% {
     opacity: 0;
@@ -54,7 +60,7 @@ body {
 /***Page loading***/
 /***Page d'acceuil ouverture***/
 #bloc_page .acceuil {
-  animation: fixe 8s;
+  animation: fixe 6s;
 }
 
 /***spinner***/
@@ -271,6 +277,7 @@ article input {
   border: none;
   background-color: #eaeaea;
   font-weight: bold;
+  cursor: pointer;
 }
 article .presentation {
   display: flex;
