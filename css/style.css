@@ -841,6 +841,10 @@ section .commande_btn:hover {
     margin-left: 15%;
   }
 
+  section .commande_btn {
+    margin-left: 0;
+  }
+
   .fa-check-circle {
     bottom: 80%;
   }
