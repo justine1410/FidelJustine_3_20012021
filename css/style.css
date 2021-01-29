@@ -163,7 +163,7 @@ button:hover > i {
   transition: 2s;
 }
 .choice_food1:hover p, .choice_food2:hover p, .choice_food3:hover p, .choice_food4:hover p {
-  width: 100%;
+  width: 60%;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
