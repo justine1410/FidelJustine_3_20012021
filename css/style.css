@@ -163,12 +163,12 @@ button:hover > i {
   transition: 2s;
 }
 .choice_food1:hover p, .choice_food2:hover p, .choice_food3:hover p, .choice_food4:hover p {
-  width: 60%;
+  width: 100%;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 .choice_food1:hover h4, .choice_food2:hover h4, .choice_food3:hover h4, .choice_food4:hover h4 {
-  width: 60%;
+  width: 100%;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
@@ -538,6 +538,7 @@ section .restaurant .restaurant_heart {
   left: 90%;
   bottom: 20%;
   width: 5%;
+  transform: scale(2);
 }
 section .restaurant .restaurant_heart button {
   border: none;
@@ -567,6 +568,7 @@ section .restaurant_heart_2 {
   position: relative;
   bottom: 20%;
   width: 5%;
+  transform: scale(2);
 }
 section .restaurant_heart_2 button {
   border: none;
@@ -602,7 +604,7 @@ section .restaurant_heart_2 button {
 }
 .resto .choice p {
   margin: 0;
-  width: 80%;
+  width: 100%;
   font-size: 12px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -626,7 +628,7 @@ section .restaurant_heart_2 button {
   display: flex;
   justify-content: center;
   position: absolute;
-  right: 10px;
+  right: 8px;
   width: 10%;
   bottom: 15px;
   font-weight: bold;
@@ -727,7 +729,7 @@ section .commande_btn:hover {
     margin: 0;
   }
   section .nom .nom-resto .heart {
-    font-size: 25px;
+    font-size: 1em;
   }
 
   .resto {
